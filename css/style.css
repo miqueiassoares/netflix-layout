@@ -6,14 +6,59 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
     box-sizing: border-box;
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+}
+
+img {
+    width: 40px;
 }
 
 .teste {
-    width: 100vw;
     height: 100vh;
     background-color: #141414;
 }
 
+#firstSection {
+    background: #141414 url('../images/banner.jpg') no-repeat ;
+    background-size: cover;
+    height: 70vh;
+}
+
+#firstDivHeader {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#logo_header {
+    width: 90px;
+    height: 30px;
+}
+
+#links_header {
+    display: flex;
+    gap: 20px;
+}
+
+.link_header {
+    font-size: .7rem;
+    transition: .3s;
+}
+
+.link_header:hover {
+    color: rgba(255, 255, 255, 0.584);
+}
+
 header {
-    height: ;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 40px;
+}
+
+#searchHeader {
+
 }

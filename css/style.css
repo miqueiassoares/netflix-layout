@@ -4,16 +4,20 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
+    font-size: .85vw;
     box-sizing: border-box;
     color: #fff;
     list-style: none;
     text-decoration: none;
 }
 
+/* EXCLUIR ESSE RESET DEPOIS */
+
 img {
     width: 40px;
 }
+
+/* EXCLUIR ESSE RESET DEPOIS */
 
 .teste {
     height: 100vh;
@@ -23,42 +27,90 @@ img {
 #firstSection {
     background: #141414 url('../images/banner.jpg') no-repeat ;
     background-size: cover;
-    height: 70vh;
+    height: 56.25vw;
+    width: 100%;
+}
+
+
+header {
+    height: 68px;
+    width: 100vw;
+    display: flex;
+    z-index: 1;
+    position: fixed;
+    justify-content: space-between;
+    padding: 0px 4%;
+    background-image: linear-gradient(180deg,rgba(0,0,0,.7) 10%,transparent);
+    transition: background-color .6s;
+}
+
+header.ativo {
+    background-color: #141414;
 }
 
 #firstDivHeader {
     display: flex;
-    gap: 20px;
+    
     align-items: center;
 }
 
 #logo_header {
-    width: 90px;
-    height: 30px;
+    max-width: 92.5px;
+    max-height: 29.6px;
+    width: auto;
+    height: auto;
+    margin-right: 5px;
 }
 
 #links_header {
     display: flex;
-    gap: 20px;
+}   
+
+#inicio {
+    color: #fff;
 }
 
 .link_header {
-    font-size: .7rem;
+    font-size: 1.2rem;
     transition: .3s;
+    color: rgba(240, 248, 255, 0.866);
+    font-weight: 600;
+    margin-left: 18px;
 }
 
 .link_header:hover {
-    color: rgba(255, 255, 255, 0.584);
+    color: #b3b3b3;
 }
 
-header {
-    height: 70px;
+#lastDivHeader {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0px 40px;
+    align-items: center;
+    gap: 20px;
 }
 
-#searchHeader {
+#searchHeader, #notificationHeader {
+    width: 24px;
+    height: 24px;
+}
 
+#avatarHeader {
+    height: 32px;
+    width: auto;
+    margin-right: 20px;
+}
+
+#filme {
+    bottom: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    left: 4%;
+    position: absolute;
+    top: 0;
+    width: 36%;
+    
+}
+
+#pFilme {
+    font-size: 1.2vw;
 }

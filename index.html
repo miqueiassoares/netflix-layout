@@ -15,7 +15,7 @@
                 <img src="images/netflix-logo.png" alt="Netflix logo" id="logo_header">
                 <nav id="nav_header">
                     <ul id="links_header">
-                        <li class=""><a href="#" class="link_header">Ínicio</a></li>
+                        <li class=""><a href="#" class="link_header" id="inicio">Inicio</a></li>
                         <li class=""><a href="#" class="link_header">Séries</a></li>
                         <li class=""><a href="#" class="link_header">Filmes</a></li>
                         <li class=""><a href="#" class="link_header">Bombando</a></li>
@@ -26,25 +26,34 @@
             </div>
             <div id="lastDivHeader">
                 <img id="searchHeader" src="images/search_FILL0_wght700_GRAD0_opsz48.svg" alt="Pesquisar">
-                <img id="NotificationHeader" src="images/notifications_FILL1_wght700_GRAD0_opsz48.svg" alt="Notificações">
+                <img id="notificationHeader" src="images/notifications_FILL1_wght700_GRAD0_opsz48.svg" alt="Notificações">
                 <img id="avatarHeader" src="images/netflix-avatar.png" alt="Avatar">
             </div>
        </header>
        <div id="filme">
-            <h1 id="h1Filme"><img src="images/logoN.svg.png" alt="logo-netflix" id="imgFilme"> Filme</h1>
+            <h1 id="h1Filme">Filme</h1>
             <h2 id="h2Filme">Blá Blá Blá</h2>
             <h3 id="h3Filme">Blá Blá Blá</h3>
             <p id="pFilme">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero provident at labore aliquid est beatae sapiente dolorum voluptatibus tenetur quae tempore impedit quo enim corrupti repellendus cupiditate vel, asperiores quis!</p>
-            <button id="buttonAssistir"><img src="images/play_arrow_FILL1_wght400_GRAD0_opsz48.svg">Assistir</button>
-            <button id="buttonMaisInformacoes"><img src="images/error_FILL0_wght400_GRAD0_opsz48.svg"> Mais informações</button>
-            <img src="images/refresh_FILL0_wght400_GRAD0_opsz48.svg">
-            <div id="classificacao">
-                <img src="images/16-icon.png" alt="Para maiores de 16 anos.">
+            <div class="button-filme">
+                <button id="buttonAssistir"><img src="images/play_arrow_FILL1_wght400_GRAD0_opsz48.svg">Assistir</button>
+                <button id="buttonMaisInformacoes"><img src="images/error_FILL0_wght400_GRAD0_opsz48.svg">Mais informações</button>
             </div>
        </div>
+       <img src="images/refresh_FILL0_wght400_GRAD0_opsz48.svg">
+       <div id="classificacao">
+            <img src="images/16-icon.png" alt="Para maiores de 16 anos.">
+        </div>
    </div>
    <div class="teste"></div>
    <div class="teste"></div>
    <div class="teste"></div>
+   <script>
+        const menu = document.querySelector("header");
+        function activeScroll(){
+            menu.classList.toggle("ativo", scrollY>0);
+        }
+        window.addEventListener("scroll", activeScroll);
+   </script>
 </body>
 </html>

@@ -29,6 +29,7 @@ img {
     background-size: cover;
     height: 56.25vw;
     width: 100%;
+    position: absolute;
 }
 
 
@@ -100,17 +101,137 @@ header.ativo {
 }
 
 #filme {
-    bottom: 35%;
+    bottom: 35vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     left: 4%;
     position: absolute;
     top: 0;
-    width: 36%;
-    
+    width: 36%;   
+}
+
+#h1-img-h2-filme {
+    width: 100%;
+    height: 153px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-bottom: 1.3vw;
+}
+
+.grupo-img-h1 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    height: 30px;
+}
+
+.img-filme {
+    height: 100%;
+    width: auto;
+}
+
+#h1Filme {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: #a6a2a1;
+    letter-spacing:5px;
+}
+
+#h2Filme {
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 5px;
 }
 
 #pFilme {
     font-size: 1.2vw;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
 }
+
+.button-filme {
+    margin-top: 1.5vw;
+    display: flex;
+    gap: .8vw;
+}
+
+.button-filme button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: .4vw;
+    border: 0;
+}
+
+#buttonAssistir {
+    background-color: #fff;
+    padding: .3vw 2vw;
+}
+
+#buttonAssistir img{
+    width: 3vw;
+    margin-left: -1vw;
+}
+
+button p {
+    font-weight: bold;
+    font-size: 1.3vw;
+}
+
+#pButton1 {
+    color: #141414;
+}
+
+#buttonMaisInformacoes {
+    background-color: rgba(109, 109, 110, 0.647);
+    padding: 0px 22px;
+    display: flex;
+    gap: 10px;
+}
+
+#buttonMaisInformacoes img {
+    width: 2.5vw;
+}
+
+.refreshAndClassificacao {
+    align-items: center;
+    bottom: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0;
+    height: 2.5vw;
+}
+
+.refresh {
+    border:1px solid rgba(255, 255, 255, 0.7);
+    padding: .5vw;
+    max-height: 3vw;
+    max-width: 3vw;
+    border-radius: 50%;
+    margin-right: 1vw;
+}
+
+.refresh img {
+    height: 100%;
+    width: 100%;
+}
+
+#classificacao {
+    background-color: rgba(27, 27, 27, 0.579);
+    border-left: .2vw solid #dcdcdc;
+    width: 7vw;
+    height: 100%;
+}
+
+#classificacao img {
+    height: 100%;
+    width: auto;
+    margin-left: 1vw;
+}
+

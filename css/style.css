@@ -29,10 +29,10 @@ header {
     height: 68px;
     width: 100%;
     display: flex;
-    z-index: 2;
+    z-index: 3;
     position: fixed;
     justify-content: space-between;
-    padding: 0px 4%;
+    padding: 0px 4vw;
     background-image: linear-gradient(180deg,rgba(0,0,0,.7) 10%,transparent);
     transition: background-color .6s;
     font-size: .85vw;
@@ -279,7 +279,7 @@ button p {
     transition: transform 450ms;
     cursor: pointer;
     border-radius: .3vw;
-    z-index: 999;
+    z-index: 2;
 }
 
 .row_posters {
@@ -287,7 +287,7 @@ button p {
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
-    z-index: 999;
+    z-index: 2;
 }
 
 .row_poster:hover {
@@ -308,7 +308,7 @@ display: none;
 
 .row {
     padding-bottom: 20px;
-    z-index: 999;
+    z-index: 2;
 }
 
 .bannerTransition {
@@ -326,7 +326,9 @@ display: none;
     cursor: pointer;
     color: #e5e5e5;
     line-height: 3vw;
-    z-index: 999;
     margin-left: 4vw;
 }
 
+.row_title:hover {
+    color: white;
+}

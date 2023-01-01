@@ -15,6 +15,7 @@
 html, body {
     position: relative;
     background: #141414;
+    overflow-x: hidden;
 }
 
 #firstSection {
@@ -331,4 +332,32 @@ display: none;
 
 .row_title:hover {
     color: white;
+}
+
+@media (max-width: 750px) {
+    #filme {
+        top: 50%;
+        left: 10vw;
+        transform: scale(1.2);
+
+    }
+
+    .refreshAndClassificacao {
+        transform: scale(1.4);
+    }
+
+    #firstSection {
+        height: 90vh;
+    }
+}
+
+@media (max-width: 600px) {
+    #filme {
+        transform: scale(1.5);
+        left: 15vw;
+    }
+
+    #links_header {
+        display: none;
+    }
 }
